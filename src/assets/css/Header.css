@@ -1,0 +1,68 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.brand-separator {
+  width: 1px;
+  height: 24px;
+  background-color: #ccc;
+  transition: background-color 0.3s ease;
+}
+
+.brand-name {
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.nav-link {
+  color: inherit !important;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.contact-us-btn {
+  background-color: #0d6efd;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Dark mode styles */
+.navbar.bg-dark {
+  background-color: #121212 !important;
+}
+
+.navbar.bg-dark .brand-separator {
+  background-color: #666;
+}
+
+.navbar.bg-dark .nav-link:hover {
+  color: #ffffff !important;
+}
+
+.navbar.bg-dark .contact-us-btn {
+  background-color: #1a73e8;
+}
+
+/* Light mode styles */
+.navbar.bg-light {
+  background-color: #ffffff !important;
+}
+
+.navbar.bg-light .nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    margin-top: 1rem;
+  }
+  
+  .nav-link {
+    margin: 0.5rem 0;
+  }
+}
